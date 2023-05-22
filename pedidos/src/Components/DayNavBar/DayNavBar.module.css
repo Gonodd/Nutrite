@@ -1,9 +1,8 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background: none;
     position: relative;
+    align-items: center;
     top: 90px;
     width: 400px;
 }
