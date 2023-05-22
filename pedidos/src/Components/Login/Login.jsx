@@ -1,5 +1,9 @@
 import styles from "./Login.module.css"
 import logo from "../../Assets/logo.jpg"
+import { Link } from "react-router-dom"
+
+
+
 const Login = () => {
     return (
         <div className={styles.container}>
@@ -16,9 +20,10 @@ const Login = () => {
                     <input placeholder="P/ etiqueta identificadora"></input>
                 </div>
             </div>
-            <button className={styles.button}>Ingresar</button>
+            <button className={styles.button}>
+                <Link to={"/orders"} className={styles.linkButton}>Ingresar</Link>
+            </button>
         </div>
-
     )
 }
 export default Login;

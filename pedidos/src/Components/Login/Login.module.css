@@ -1,5 +1,5 @@
 .container {
-    background-image: url("../../Assets/backgraundLogin.jpg");
+    background-image: url("../../Assets/backgroundLogin.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -21,6 +21,14 @@
     margin-top: 50px;
     font-size: x-large;
     color: black;
+    background-color: rgba(210, 126, 0, 0.5);
+    height: 75px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 
 .button {
@@ -55,4 +63,13 @@
 
 .button:hover {
     box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.linkButton {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkButton:hover {
+    text-decoration: none;
 }
