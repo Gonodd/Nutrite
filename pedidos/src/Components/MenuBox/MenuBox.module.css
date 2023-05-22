@@ -1,13 +1,14 @@
 .container {
     display: flex;
-    width: 400px;
-    height: 107px;
+    width: 98vw;
+    height: 16vh;
     margin: 2px;
 }
 
 .textContainer {
     background-color: rgba(130, 86, 5, 0.5);
-    width: 330px;
+    width: 75%;
+    height: 100%;
     border: 2px solid black;
     border-radius: 10px;
     display: flex;
@@ -25,7 +26,7 @@
 .counterContainer {
     background-color: rgba(165, 141, 137, 0.5);
     margin: 2px;
-    width: 70px;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
