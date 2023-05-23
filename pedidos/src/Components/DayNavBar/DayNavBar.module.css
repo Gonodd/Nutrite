@@ -78,3 +78,12 @@
 .buttonFinish:active {
     opacity: .5;
 }
+
+.linkButton {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkButton:hover {
+    text-decoration: none;
+}

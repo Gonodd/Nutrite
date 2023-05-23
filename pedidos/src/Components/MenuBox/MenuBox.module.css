@@ -13,13 +13,14 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-content: baseline;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .description {
     position: relative;
-    top: -42px;
+    font-size: 14px;
+    top: -38px;
 
 }
 

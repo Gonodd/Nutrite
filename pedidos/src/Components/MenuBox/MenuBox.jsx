@@ -1,11 +1,13 @@
 import styles from "./MenuBox.module.css";
 
-const MenuBox = () => {
+const MenuBox = (props) => {
+    const menu = props;
+    const propiedad = Object.keys(menu)[0];
     return (
         <div className={styles.container}>
             <div className={styles.textContainer}>
-                <h1>Clase</h1>
-                <p className={styles.description}>Descripcion del menu</p>
+                <h1>{propiedad.toUpperCase()}</h1>
+                <p className={styles.description}>{menu[propiedad]}</p>
             </div>
             <div className={styles.counterContainer}>
                 <div className={styles.spanContainer}>

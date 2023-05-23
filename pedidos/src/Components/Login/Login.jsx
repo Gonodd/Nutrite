@@ -21,7 +21,7 @@ const Login = () => {
                 </div>
             </div>
             <button className={styles.button}>
-                <Link to={"/orders"} className={styles.linkButton}>Ingresar</Link>
+                <Link to={"/orders/Lunes"} className={styles.linkButton}>Ingresar</Link>
             </button>
         </div>
     )
