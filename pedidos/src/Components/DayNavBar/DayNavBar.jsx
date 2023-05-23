@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 const DayNavBar = () => {
     return (
         <div className={styles.container}>
-            <button>Lunes</button>
-            <button>Martes</button>
-            <button>Miercoles</button>
-            <button>Jueves</button>
-            <button>Viernes</button>
+            <button className={styles.buttonDay}>Lunes</button>
+            <button className={styles.buttonDay}>Martes</button>
+            <button className={styles.buttonDay}>Miercoles</button>
+            <button className={styles.buttonDay}>Jueves</button>
+            <button className={styles.buttonDay}>Viernes</button>
+            <button className={styles.buttonFinish}>Finalizar</button>
         </div>
     )
 }

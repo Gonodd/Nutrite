@@ -11,7 +11,7 @@ function App() {
   const location = useLocation();
   return (
     <div className={styles.container}> 
-      {/*location.pathname === "/orders" && <DayNavBar/>*/}
+      {location.pathname === "/orders" && <DayNavBar/>}
     <Routes>
         <Route path='/' element={<Login/>}/>
         <Route path="/orders" element={<Orders/>}/>
