@@ -1,10 +1,10 @@
 .container {
-    margin-top: -20px;
+    margin-top: -41px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    top: 135px;
+    top: 23vh;
     left: 30px;
     width: 90vw;
 }
@@ -17,9 +17,8 @@
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
     font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 800;
     line-height: 16px;
     min-height: 40px;
@@ -51,11 +50,10 @@
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: rgb(43, 172, 11);
+    color: rgb(109, 181, 91);
     cursor: pointer;
-    display: inline-block;
     font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 800;
     line-height: 16px;
     min-height: 40px;

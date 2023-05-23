@@ -1,15 +1,15 @@
 import styles from "./DayNavBar.module.css";
-import { Link } from "react-router-dom";
+
 
 const DayNavBar = () => {
     return (
         <div className={styles.container}>
-            <button className={styles.buttonDay}>Lunes</button>
-            <button className={styles.buttonDay}>Martes</button>
-            <button className={styles.buttonDay}>Miercoles</button>
-            <button className={styles.buttonDay}>Jueves</button>
-            <button className={styles.buttonDay}>Viernes</button>
-            <button className={styles.buttonFinish}>Finalizar</button>
+            <button className={styles.buttonDay}>Lun</button>
+            <button className={styles.buttonDay}>Mar</button>
+            <button className={styles.buttonDay}>Mie</button>
+            <button className={styles.buttonDay}>Jue</button>
+            <button className={styles.buttonDay}>Vie</button>
+            <button className={styles.buttonFinish}>Pedir</button>
         </div>
     )
 }
