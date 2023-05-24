@@ -1,39 +1,36 @@
+import { useLocation, useParams } from "react-router-dom";
 import styles from "./MenuBox.module.css";
 import { useState } from "react";
 
 const MenuBox = (props) => {
-  const menu = props;
-  const propiedad = Object.keys(menu)[0];
+  const { day, menu, description, pedido, setPedido } = props;
 
-  const [cantidad, setCantidad] = useState({
-    num: 0,
-  });
+
 
   return (
+
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1>{propiedad.toUpperCase()}</h1>
-        <p className={styles.description}>{menu[propiedad]}</p>
+        <h1>{menu.toUpperCase()}</h1>
+        <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.counterContainer}>
         <div className={styles.spanContainer}>
-          <span>{cantidad.num}</span>
+          <span>{pedido[day][menu]}</span>
         </div>
         <div className={styles.buttonsContainer}>
           <button
             onClick={() => {
-              setCantidad({
-                num: cantidad.num + 1,
-              });
+              const suma = pedido[day][menu] + 1;
+              setPedido({ ...pedido, [day]: { ...pedido[day], [menu]: suma } });
             }}
           >
             +
           </button>
           <button
             onClick={() => {
-              setCantidad({
-                num: cantidad.num - 1,
-              });
+              const resta = pedido[day][menu] - 1;
+              setPedido({ ...pedido, [day]: { ...pedido[day], [menu]: resta } });
             }}
           >
             -

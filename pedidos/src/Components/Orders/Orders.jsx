@@ -3,18 +3,25 @@ import MenuBox from "../MenuBox/MenuBox";
 import { useParams } from "react-router-dom";
 import week from "../../Data Base Fake/week.js";
 
-const Orders = () => {
-  const day = useParams();
-  const dayLowerCase = day.id.toLocaleLowerCase();
+const Orders = (props) => {
+  const { pedido, setPedido } = props;
+  const dayLocate = useParams();
+  const day = dayLocate.id.toLocaleLowerCase();;
+  const clasico = week[day].clasico;
+  const sinHarina = week[day].sinHarina;
+  const vegetariano = week[day].vegetariano;
+  const dieta = week[day].dieta;
+  console.log(clasico);
+
 
   return (
     <div className={styles.container}>
       <h1 className={styles.day}>{day.id}</h1>
       <div>
-        <MenuBox clasico={week[dayLowerCase].clasico} />
-        <MenuBox sinHarina={week[dayLowerCase].sinHarina} />
-        <MenuBox vegetariano={week[dayLowerCase].vegetariano} />
-        <MenuBox dieta={week[dayLowerCase].dieta} />
+        <MenuBox day={day} menu={"clasico"} description={clasico} pedido={pedido} setPedido={setPedido} />
+        <MenuBox day={day} menu={"sinHarina"} description={sinHarina} pedido={pedido} setPedido={setPedido} />
+        <MenuBox day={day} menu={"vegetariano"} description={vegetariano} pedido={pedido} setPedido={setPedido} />
+        <MenuBox day={day} menu={"dieta"} description={dieta} pedido={pedido} setPedido={setPedido} />
       </div>
     </div>
   );
