@@ -1,6 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
 import styles from "./MenuBox.module.css";
-import { useState } from "react";
 
 const MenuBox = (props) => {
   const { day, menu, description, pedido, setPedido } = props;
@@ -19,22 +17,18 @@ const MenuBox = (props) => {
           <span>{pedido[day][menu]}</span>
         </div>
         <div className={styles.buttonsContainer}>
-          <button
+          <button className={styles.buttonSum}
             onClick={() => {
               const suma = pedido[day][menu] + 1;
               setPedido({ ...pedido, [day]: { ...pedido[day], [menu]: suma } });
             }}
-          >
-            +
-          </button>
-          <button
+          >+</button>
+          <button className={styles.buttonRes}
             onClick={() => {
               const resta = pedido[day][menu] - 1;
               setPedido({ ...pedido, [day]: { ...pedido[day], [menu]: resta } });
             }}
-          >
-            -
-          </button>
+          >-</button>
         </div>
       </div>
     </div>

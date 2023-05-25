@@ -1,0 +1,47 @@
+.elementsContainer {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../Assets/backgroundCart.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dayContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    position: relative;
+    top: 20vh;
+}
+
+.day {
+    font-size: 17px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 30vh;
+
+}
+
+
+
+.linkButton {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkButton:hover {
+    text-decoration: none;
+}

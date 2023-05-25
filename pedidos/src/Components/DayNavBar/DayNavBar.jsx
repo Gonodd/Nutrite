@@ -20,7 +20,7 @@ const DayNavBar = () => {
             <button className={styles.buttonDay}>
                 <Link className={styles.linkButton} to={"/orders/Viernes"}>Vie</Link>
             </button>
-            <button className={styles.buttonFinish}>Pedir</button>
+            <button className={styles.buttonFinish}><Link className={styles.linkButton} to={"/cart"}>Pedir</Link></button>
         </div>
     )
 }

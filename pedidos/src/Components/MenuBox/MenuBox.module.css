@@ -47,3 +47,24 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.buttonSum {
+    font-family: inherit;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttonRes {
+    font-family: inherit;
+    width: 20px;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(0deg, rgb(167, 25, 20) 0%, rgb(247, 112, 102) 100%);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -5,10 +5,10 @@ import Login from "./Components/Login/Login.jsx";
 import Orders from "./Components/Orders/Orders.jsx";
 import DayNavBar from "./Components/DayNavBar/DayNavBar.jsx";
 import { useState } from "react";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
   const location = useLocation();
-  const [day, setDay] = useState({});
   const [pedido, setPedido] = useState({
     numeroCel:"",
     direccion:"",
@@ -53,11 +53,12 @@ function App() {
         location.pathname === "/orders/Miercoles" ||
         location.pathname === "/orders/Jueves" ||
         location.pathname === "/orders/Viernes") && (
-        <DayNavBar setDay={setDay} />
+        <DayNavBar />
         )}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/orders/:id" element={<Orders pedido={pedido} setPedido={setPedido}/>} />
+        <Route path="/cart" element={<Cart pedido={pedido}/>}/>
       </Routes>
     </div>
   );

@@ -11,12 +11,12 @@ const Orders = (props) => {
   const sinHarina = week[day].sinHarina;
   const vegetariano = week[day].vegetariano;
   const dieta = week[day].dieta;
-  console.log(clasico);
+
 
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.day}>{day.id}</h1>
+      <h1 className={styles.day}>{dayLocate.id}</h1>
       <div>
         <MenuBox day={day} menu={"clasico"} description={clasico} pedido={pedido} setPedido={setPedido} />
         <MenuBox day={day} menu={"sinHarina"} description={sinHarina} pedido={pedido} setPedido={setPedido} />
